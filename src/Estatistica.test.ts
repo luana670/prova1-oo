@@ -22,11 +22,11 @@ describe("Testes sobre a classe Estatistica", function () {
   test("deve encontrar corretamente a mediana de um conjunto de números", function () {
     let estat = new Estatistica([3, 5, 18, 90, 72, 45, 23, 54, 66, 102, 84]);
     let mediana = estat.mediana();
-    expect(mediana).toBe(45);
+    expect(mediana).toBe(54);
 
     estat = new Estatistica([12, 32, 56, -9, -75, 87, 43, -5, 100, 58, -20, 0]);
     mediana = estat.mediana();
-    expect(mediana).toBe(65);
+    expect(mediana).toBe(22);
   });
 
   test("deve encontrar corretamente a moda de um conjunto de números", function () {
